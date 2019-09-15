@@ -3,3 +3,7 @@
 ################################################################################
 
 /Sudoku/.vs/Sudoku/v15
+/Sudoku/Sudoku/bin/Debug/netstandard2.0
+/Sudoku/Sudoku/obj
+/Sudoku/TestSudoku/bin/Debug/netcoreapp2.1
+/Sudoku/TestSudoku/obj

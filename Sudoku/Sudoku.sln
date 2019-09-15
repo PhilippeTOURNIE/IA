@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku", "Sudoku\Sudoku.csproj", "{5BC1F724-A2EC-40AE-9DEE-A48CFD8F09CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSudoku", "TestSudoku\TestSudoku.csproj", "{163B3271-9AED-4A1A-8F77-31EA54E1647D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F73D0B46-403B-49E7-A358-D75EFC03F080}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemExpert", "SystemExpert", "{79608217-2F5B-4AF8-BCF4-5E3F88D987C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BC1F724-A2EC-40AE-9DEE-A48CFD8F09CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC1F724-A2EC-40AE-9DEE-A48CFD8F09CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC1F724-A2EC-40AE-9DEE-A48CFD8F09CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC1F724-A2EC-40AE-9DEE-A48CFD8F09CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163B3271-9AED-4A1A-8F77-31EA54E1647D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163B3271-9AED-4A1A-8F77-31EA54E1647D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163B3271-9AED-4A1A-8F77-31EA54E1647D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163B3271-9AED-4A1A-8F77-31EA54E1647D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BC1F724-A2EC-40AE-9DEE-A48CFD8F09CD} = {79608217-2F5B-4AF8-BCF4-5E3F88D987C6}
+		{163B3271-9AED-4A1A-8F77-31EA54E1647D} = {79608217-2F5B-4AF8-BCF4-5E3F88D987C6}
+		{79608217-2F5B-4AF8-BCF4-5E3F88D987C6} = {F73D0B46-403B-49E7-A358-D75EFC03F080}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {366B0757-4831-404D-A235-2F5A3D36A8C6}
+	EndGlobalSection
+EndGlobal
