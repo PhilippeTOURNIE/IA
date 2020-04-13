@@ -33,6 +33,9 @@ namespace SolverSudoku
         List<int> M2 = new List<int>() { 3, 4, 5 };
         List<int> M3 = new List<int>() { 6, 7, 8 };
 
+        /// <summary>
+        /// Choix possible pour une case
+        /// </summary>
         public List<List<int>> Tirage { get; set; } = new List<List<int>>();
 
         public Fact(int id, int?[] row)

@@ -48,7 +48,7 @@ namespace SolverSudoku
 
                 //---------------------
                 // regle 1
-                // si une valeur est autorisé que sur une case alors on a une solution
+                // si une valeur est autorisée que sur une case alors on a une solution
                 //---------------------
                 foreach (var exclure in exclures)
                 {
