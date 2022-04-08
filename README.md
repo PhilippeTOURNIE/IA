@@ -12,3 +12,5 @@ Traveling saleman (calcul du plus court chemin)
 
 # TABU Search
 max story point in Sprint 
+# Multy Agents
+banc de poissons
