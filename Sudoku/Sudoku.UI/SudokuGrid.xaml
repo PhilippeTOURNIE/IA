@@ -1,0 +1,152 @@
+﻿<UserControl x:Class="Sudoku.UI.SudokuGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sudoku.UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <Style TargetType="TextBox">
+                <Setter  Property="Width" Value="30" />
+                <Setter  Property="Height" Value="25" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="Black" />
+            </Style>
+        </Grid.Resources>
+        <Grid Margin="10" Grid.Row="0">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+
+                <TextBlock Text="Remplir votre sudoku :" Height="27"  VerticalAlignment="Center" Margin="2,10,5,5" />
+                <Button  Content="Résoudre" Width="100" Height="27" Cursor="Hand" VerticalContentAlignment="Center" VerticalAlignment="Center" Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <Grid  Grid.Row="1" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                
+            </Grid.RowDefinitions>
+
+            <!-- sudoku -->
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[0]}" Grid.Row="0" Grid.Column="0" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[1]}" Grid.Row="0" Grid.Column="1"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[2]}" Grid.Row="0" Grid.Column="2" />
+            <TextBox  Text="{Binding Mode=TwoWay, Path=Cells[3]}" Grid.Row="0" Grid.Column="3" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[4]}" Grid.Row="0" Grid.Column="4" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[5]}" Grid.Row="0" Grid.Column="5"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[6]}" Grid.Row="0" Grid.Column="6" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[7]}" Grid.Row="0" Grid.Column="7" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[8]}" Grid.Row="0" Grid.Column="8" />
+
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[9]}" Grid.Row="1" Grid.Column="0"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[10]}" Grid.Row="1" Grid.Column="1"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[11]}" Grid.Row="1" Grid.Column="2"  />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[12]}" Grid.Row="1" Grid.Column="3"  />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[13]}" Grid.Row="1" Grid.Column="4"  />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[14]}" Grid.Row="1" Grid.Column="5"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[15]}" Grid.Row="1" Grid.Column="6"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[16]}" Grid.Row="1" Grid.Column="7"  />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[17]}" Grid.Row="1" Grid.Column="8"  />
+
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[18]}" Grid.Row="2" Grid.Column="0"   />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[19]}" Grid.Row="2" Grid.Column="1"   />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[20]}" Grid.Row="2" Grid.Column="2"   />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[21]}" Grid.Row="2" Grid.Column="3"   />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[22]}" Grid.Row="2" Grid.Column="4"   />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[23]}" Grid.Row="2" Grid.Column="5"   />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[24]}" Grid.Row="2" Grid.Column="6"   />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[25]}" Grid.Row="2" Grid.Column="7"   />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[26]}" Grid.Row="2" Grid.Column="8"   />
+
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[27]}"  Grid.Row="3" Grid.Column="0"  />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[28]}"  Grid.Row="3" Grid.Column="1" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[29]}"  Grid.Row="3" Grid.Column="2" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[30]}"  Grid.Row="3" Grid.Column="3" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[31]}"  Grid.Row="3" Grid.Column="4" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[32]}"  Grid.Row="3" Grid.Column="5" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[33]}"  Grid.Row="3" Grid.Column="6" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[34]}"  Grid.Row="3" Grid.Column="7" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[35]}"  Grid.Row="3" Grid.Column="8" />
+
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[36]}"  Grid.Row="4" Grid.Column="0"/>
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[37]}"  Grid.Row="4" Grid.Column="1" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[38]}"  Grid.Row="4" Grid.Column="2" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[39]}"  Grid.Row="4" Grid.Column="3" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[40]}"  Grid.Row="4" Grid.Column="4" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[41]}"  Grid.Row="4" Grid.Column="5" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[42]}"  Grid.Row="4" Grid.Column="6" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[43]}"  Grid.Row="4" Grid.Column="7"/>
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[44]}"  Grid.Row="4" Grid.Column="8"/>
+
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[45]}"   Grid.Row="5" Grid.Column="0"/>
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[46]}"   Grid.Row="5" Grid.Column="1" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[47]}"   Grid.Row="5" Grid.Column="2" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[48]}"   Grid.Row="5" Grid.Column="3" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[49]}"   Grid.Row="5" Grid.Column="4"/>
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[50]}"   Grid.Row="5" Grid.Column="5"/>
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[51]}"   Grid.Row="5" Grid.Column="6"/>
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[52]}"   Grid.Row="5" Grid.Column="7" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[53]}"   Grid.Row="5" Grid.Column="8" />
+
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[54]}"  Grid.Row="6" Grid.Column="0" />
+            <TextBox  Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[55]}"  Grid.Row="6" Grid.Column="1" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[56]}"  Grid.Row="6" Grid.Column="2" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[57]}"  Grid.Row="6" Grid.Column="3" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[58]}"  Grid.Row="6" Grid.Column="4" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[59]}"  Grid.Row="6" Grid.Column="5" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[60]}"  Grid.Row="6" Grid.Column="6" />
+            <TextBox  Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[61]}"  Grid.Row="6" Grid.Column="7" />
+            <TextBox  Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[62]}"  Grid.Row="6" Grid.Column="8" />
+
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[63]}"  Grid.Row="7" Grid.Column="0" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[64]}"  Grid.Row="7" Grid.Column="1" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[65]}"  Grid.Row="7" Grid.Column="2" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[66]}"  Grid.Row="7" Grid.Column="3" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[67]}"  Grid.Row="7" Grid.Column="4" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[68]}"  Grid.Row="7" Grid.Column="5" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[69]}"  Grid.Row="7" Grid.Column="6" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[70]}"  Grid.Row="7" Grid.Column="7" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[71]}"  Grid.Row="7" Grid.Column="8" />
+
+
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[72]}"  Grid.Row="8" Grid.Column="0" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[73]}"  Grid.Row="8" Grid.Column="1" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[74]}"  Grid.Row="8" Grid.Column="2" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[75]}"  Grid.Row="8" Grid.Column="3" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[76]}"  Grid.Row="8" Grid.Column="4" />
+            <TextBox Text="{Binding Mode=TwoWay, Path=Cells[77]}"  Grid.Row="8" Grid.Column="5" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[78]}"  Grid.Row="8" Grid.Column="6" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[79]}"  Grid.Row="8" Grid.Column="7" />
+            <TextBox Background="LightGray" Text="{Binding Mode=TwoWay, Path=Cells[80]}"  Grid.Row="8" Grid.Column="8" />
+        </Grid>
+    </Grid>
+</UserControl>

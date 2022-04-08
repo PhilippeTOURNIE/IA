@@ -1,12 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F73D0B46-403B-49E7-A358-D75EFC03F080}"
-	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemExpert", "SystemExpert", "{79608217-2F5B-4AF8-BCF4-5E3F88D987C6}"
 EndProject
@@ -33,6 +30,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MultyAgents", "MultyAgents", "{280DF562-1039-433E-A51E-74A4E100D35C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fishs", "Poissons\Fishs.csproj", "{D96613CC-CA96-4C71-945B-D26D6A4595C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.UI", "Sudoku\Sudoku.UI\Sudoku.UI.csproj", "{B09527C1-F781-4FAD-AC54-501043E386A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TabuSearch", "TabuSearch", "{B286D353-F3A3-4A1B-9B14-3B08A3019B70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SprintPlanning", "TabuSearch\Planning\SprintPlanning.csproj", "{BCDF7BF9-EC93-4293-9915-E1ED8106640A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +75,14 @@ Global
 		{D96613CC-CA96-4C71-945B-D26D6A4595C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D96613CC-CA96-4C71-945B-D26D6A4595C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D96613CC-CA96-4C71-945B-D26D6A4595C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09527C1-F781-4FAD-AC54-501043E386A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09527C1-F781-4FAD-AC54-501043E386A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09527C1-F781-4FAD-AC54-501043E386A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09527C1-F781-4FAD-AC54-501043E386A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDF7BF9-EC93-4293-9915-E1ED8106640A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDF7BF9-EC93-4293-9915-E1ED8106640A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDF7BF9-EC93-4293-9915-E1ED8106640A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDF7BF9-EC93-4293-9915-E1ED8106640A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +101,9 @@ Global
 		{D35DACA9-56A8-465E-9FF8-00E6A38840DD} = {39745C22-4A55-411F-81B4-10347E6C3D40}
 		{280DF562-1039-433E-A51E-74A4E100D35C} = {F73D0B46-403B-49E7-A358-D75EFC03F080}
 		{D96613CC-CA96-4C71-945B-D26D6A4595C5} = {280DF562-1039-433E-A51E-74A4E100D35C}
+		{B09527C1-F781-4FAD-AC54-501043E386A7} = {79608217-2F5B-4AF8-BCF4-5E3F88D987C6}
+		{B286D353-F3A3-4A1B-9B14-3B08A3019B70} = {F73D0B46-403B-49E7-A358-D75EFC03F080}
+		{BCDF7BF9-EC93-4293-9915-E1ED8106640A} = {B286D353-F3A3-4A1B-9B14-3B08A3019B70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {366B0757-4831-404D-A235-2F5A3D36A8C6}

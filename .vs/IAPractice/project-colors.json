@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1dfa5143-a91d-4202-a80b-e8181785e422": {
+      "ProjectGuid": "1dfa5143-a91d-4202-a80b-e8181785e422",
+      "DisplayName": "TestSudoku",
+      "ColorIndex": 0
+    },
+    "36af8ef1-299d-4a0e-bfde-1320c4960f78": {
+      "ProjectGuid": "36af8ef1-299d-4a0e-bfde-1320c4960f78",
+      "DisplayName": "Sudoku",
+      "ColorIndex": 1
+    },
+    "b09527c1-f781-4fad-ac54-501043e386a7": {
+      "ProjectGuid": "b09527c1-f781-4fad-ac54-501043e386a7",
+      "DisplayName": "Sudoku.UI",
+      "ColorIndex": 2
+    },
+    "d96613cc-ca96-4c71-945b-d26d6a4595c5": {
+      "ProjectGuid": "d96613cc-ca96-4c71-945b-d26d6a4595c5",
+      "DisplayName": "Fishs",
+      "ColorIndex": 3
+    },
+    "ad65e916-c3e1-4322-9f6e-883d7cc68887": {
+      "ProjectGuid": "ad65e916-c3e1-4322-9f6e-883d7cc68887",
+      "DisplayName": "Planning",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "bcdf7bf9-ec93-4293-9915-e1ed8106640a": {
+      "ProjectGuid": "bcdf7bf9-ec93-4293-9915-e1ed8106640a",
+      "DisplayName": "Planning",
+      "ColorIndex": 5
+    },
+    "b286d353-f3a3-4a1b-9b14-3b08a3019b70": {
+      "ProjectGuid": "b286d353-f3a3-4a1b-9b14-3b08a3019b70",
+      "DisplayName": "TabuSearch",
+      "ColorIndex": 6
+    },
+    "51c2174a-ec98-42a8-ab06-e4ddda671dde": {
+      "ProjectGuid": "51c2174a-ec98-42a8-ab06-e4ddda671dde",
+      "DisplayName": "ZoomGps",
+      "ColorIndex": 7
+    },
+    "c56b4a2e-6492-4e5a-a3aa-6ef56109b758": {
+      "ProjectGuid": "c56b4a2e-6492-4e5a-a3aa-6ef56109b758",
+      "DisplayName": "TestZoomGps",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

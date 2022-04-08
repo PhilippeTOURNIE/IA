@@ -22,3 +22,8 @@
 /PathFinder/obj
 /Poissons/bin/Debug
 /Poissons/obj
+/Sudoku/Sudoku.UI/obj
+/Sudoku/Sudoku.UI/bin/Debug/net6.0-windows
+/.vs/IAPractice/v17
+/TabuSearch/Planning/bin
+/TabuSearch/Planning/obj
